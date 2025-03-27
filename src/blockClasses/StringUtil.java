@@ -1,3 +1,5 @@
+package blockClasses;
+
 import java.security.MessageDigest;
 
 /* This class is meant to help in the hashing process

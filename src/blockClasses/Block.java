@@ -1,5 +1,7 @@
+package blockClasses;
+
 import java.util.Date; //will be used for dates
-import java.security.MessageDigest; // for our hashes
+
 
 /*This class is meant to be for the block objects
 Each block contains a hash value, which in turn is calculated using the
