@@ -1,6 +1,6 @@
 import blockClasses.Block;
 
-public class BlockCCH {
+public class BlockCCHArray {
       //this will be our main
       public static void main(String[] args) {
             // the first chain block with 0 as previus Hash
@@ -10,13 +10,12 @@ public class BlockCCH {
 
             Block[] blocks = new Block[10]; // 10 blocks
             blocks[0] = genesisBlock; // first block
-            //create and print each block
+
+            //create and print each block in the array
             for(int i=1; i<10; i++) {
                   String msg = "This is block N #" + i;
                   blocks[i] = new Block(msg,blocks[i-1].Hash);
                   System.out.println("Block N #" + i + " Hash is >>: "+ blocks[i].Hash);
             }
       }
-
-      
 }
